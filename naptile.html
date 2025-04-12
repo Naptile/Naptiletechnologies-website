@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naptile M. Peter – Founder of Naptile Technologies</title>
+  <meta name="description" content="Meet Naptile M. Peter, founder of Naptile Technologies. Discover his journey, vision, and how he’s empowering businesses through innovative digital solutions.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background: #fefefe;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 960px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 10px 0;
+      font-size: 1.1em;
+    }
+
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #e9f1ff, #fdfdfd);
+      border-bottom: 1px solid #ddd;
+    }
+
+    .hero img {
+      max-width: 140px;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+    }
+
+    .hero h2 {
+      font-weight: normal;
+      color: #666;
+    }
+
+    .cta {
+      text-align: center;
+      background: #f0faff;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #0073e6;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #005bb5;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8em;
+      }
+
+      .cta a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <img src="mypic2.jpg" alt="Naptile M. Peter">
+    <h1>Naptile M. Peter</h1>
+    <h2>Founder & CEO – Naptile Technologies</h2>
+    <p>A visionary entrepreneur building smart digital tools for the modern business world.</p>
+  </header>
+
+  <section class="story">
+    <h2>My Story</h2>
+    <p>
+      I'm Naptile M. Peter, founder of Naptile Technologies. My passion for technology began with a desire to solve real-world problems. Over the years, I’ve worked closely with businesses and startups struggling with outdated systems and inefficient workflows.
+    </p>
+    <p>
+      I launched Naptile Technologies to help businesses embrace smarter digital tools, improve productivity, and scale sustainably. Our work is grounded in purpose and powered by people.
+    </p>
+  </section>
+
+  <section class="values">
+    <h2>What I Believe In</h2>
+    <ul>
+      <li>💡 Innovation should be simple and scalable.</li>
+      <li>🔍 Transparency is the foundation of trust.</li>
+      <li>🌍 Technology should empower everyone.</li>
+      <li>📚 Growth comes through learning and collaboration.</li>
+    </ul>
+  </section>
+
+  <section class="about-company">
+    <h2>About Naptile Technologies</h2>
+    <p>
+      Naptile Technologies is a digital solutions company focused on building meaningful tools for businesses. From workflow automation to scalable custom software, we help organizations simplify complexity and accelerate growth.
+    </p>
+    <p>
+      We partner with startups, SMEs, and forward-thinking companies ready to adapt and lead in their space.
+    </p>
+  </section>
+
+  <section class="cta">
+    <h2>Let’s Connect</h2>
+    <p>
+      Want to collaborate or just say hello? I’d love to hear from you.
+    </p>
+    <a href="https://wa.me/+254707789021">Contact Me</a>
+    <a href="https://www.linkedin.com/in/naptile-peter-01032930b/" target="_blank">Connect on LinkedIn</a>
+  </section>
+
+  <script>
+    // Scroll reveal animation for sections
+    const sections = document.querySelectorAll("section");
+
+    const revealOnScroll = () => {
+      const scrollY = window.scrollY + window.innerHeight - 100;
+      sections.forEach(section => {
+        if (section.offsetTop < scrollY) {
+          section.classList.add("visible");
+        }
+      });
+    };
+
+    document.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+
+</body>
+</html>
