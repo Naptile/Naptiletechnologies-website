@@ -36,3 +36,15 @@ document.addEventListener (' DOMContentLoaded', function() {
 }
     
 });
+
+<script>
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    const blocks = document.querySelectorAll('.searchable');
+
+    blocks.forEach(block => {
+      const text = block.innerText.toLowerCase();
+      block.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+</script>
