@@ -37,7 +37,7 @@ document.addEventListener (' DOMContentLoaded', function() {
     
 });
 
-<script>
+
   document.getElementById('searchInput').addEventListener('input', function () {
     const query = this.value.toLowerCase();
     const blocks = document.querySelectorAll('.searchable');
@@ -47,4 +47,4 @@ document.addEventListener (' DOMContentLoaded', function() {
       block.style.display = text.includes(query) ? 'block' : 'none';
     });
   });
-</script>
+
