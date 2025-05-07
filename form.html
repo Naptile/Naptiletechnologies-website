@@ -15,30 +15,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+  <style>
+    body { font-family: Arial; background: #f4f4f4; padding: 20px; }
+    .form-container {
+      background: #fff; padding: 20px; border-radius: 5px;
+      max-width: 400px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    input, textarea {
+      width: 100%; padding: 10px; margin: 10px 0;
+      border: 1px solid #ccc; border-radius: 3px;
+     
+    }
+    button {
+      background: #28a745; color: white; padding: 10px;
+      border: none; border-radius: 3px; cursor: pointer;
+    }
+    button:hover { background: #218838; }
+  </style>
 </head>
 <body>
-
-<h2>Contact Us</h2>
-
-<!-- Form starts here -->
-<form action="mailto:naptiletechnologies@gmail.com" method="post" enctype="text/plain">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-    <input type="submit" value="Send" onclick = "submit();">
-        
-    <input type="reset" value="Reset">
-</form>
-<script>
-    function submit(){
-        alert('Thank You! /n Form submitted successfully');
-    }
-</script>
+  <div class="form-container">
+    <form action="https://formsubmit.co/naptiletechnologies@gmail.com" method="POST" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <!-- Prevent bot spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirect to thank you page -->
+      <input type="hidden" name="_next" value="Thnkyou for your feedback">
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </body>
 </html>
+
