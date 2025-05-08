@@ -83,6 +83,10 @@
         <textarea name="message" id="" placeholder="Message"></textarea>
         <br>
         <input type="submit" name="submit" value="Send Message" class="btn">
+        <!-- Prevent bot spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirect to thank you page -->
+      <input type="hidden" name="_next" value="https://naptile.github.io/Naptiletechnologies-website/thankyou2.html">
        
     
 </form>
