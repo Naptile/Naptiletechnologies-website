@@ -167,6 +167,8 @@ img {
     background-color: green;
     color: white;
     text-decoration: none;
+    border-decoration:none;
+    
 }
 .text {
     text-align: right;
