@@ -19,6 +19,7 @@ header{
 }
 .logo{
     display:inline-block;
+    margin-right:90px;
     
   
 }
@@ -27,6 +28,7 @@ nav{
     padding: 10px;
     border-radius: 7px;
     display:inline-block;
+    margin-left:10px;
 }
 nav #toggle {
     display: none;
