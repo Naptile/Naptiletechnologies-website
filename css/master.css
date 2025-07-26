@@ -19,6 +19,7 @@ header{
 }
 .logo{
     display:inline-block;
+    margin-left:50px;
 }
 nav{
     background:rgba(0, 0, 0,  .5) ;
