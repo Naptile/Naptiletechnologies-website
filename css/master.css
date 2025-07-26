@@ -18,13 +18,14 @@ header{
     min-height: 300px;
 }
 .logo{
-    display:inline-block;
+    display:block;
   
 }
 nav{
     background:rgba(0, 0, 0,  .5) ;
     padding: 10px;
     border-radius: 7px;
+    display:block;
 }
 nav #toggle {
     display: none;
