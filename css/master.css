@@ -19,13 +19,14 @@ header{
 }
 .logo{
     display:inline-block;
+    
   
 }
 nav{
     background:rgba(0, 0, 0,  .5) ;
     padding: 10px;
     border-radius: 7px;
-    display:block;
+    display:inline-block;
 }
 nav #toggle {
     display: none;
