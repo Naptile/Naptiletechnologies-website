@@ -17,6 +17,9 @@ header{
     position: relative;
     min-height: 300px;
 }
+.logo{
+    display:inline-block;
+}
 nav{
     background:rgba(0, 0, 0,  .5) ;
     padding: 10px;
